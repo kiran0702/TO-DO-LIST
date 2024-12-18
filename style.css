@@ -1,0 +1,99 @@
+body{
+background-color: black;
+font-family: fantasy;
+}
+
+#box1{
+  
+  border-radius: 25PX;
+  padding: 40px;
+  text-align: center;
+}
+
+.head{
+  color: white;
+  font-size: 70px;
+  transition: 2s;
+}
+
+#tasks{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin-right: 30px;
+  border-radius: 20px;
+  border-color: blanchedalmond;
+  width: 250px;
+  padding: 20px;
+  border: none;
+}
+
+#tasks:hover{
+  background-color: #f0f0f0;
+}
+
+#newtask{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  margin-left:40px;
+  border-radius: 20px;
+  border-color: blanchedalmond;
+  padding: 20px;
+  border: none;
+}
+
+#newtask:hover{
+  background-color: #28a745;
+}
+
+.space{
+  padding: 10px;
+  margin-left: 0px;
+}
+
+li{
+  display: flex;
+  justify-content: space-between; /* Space between task and button */
+  /* Align vertically */
+  margin: 10px 0; /* Add spacing between tasks */
+  list-style-type: none;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  font-size: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+li button{
+  background-color:  #28a745;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  color: azure;
+  border-radius: 25px;
+  width: 120px;
+  font-size: 15px;
+  cursor: pointer;
+  font-size: bold;
+  border: none;
+  margin-top: 7.52px;
+}
+li button:hover{
+  background-color:blueviolet;
+}
+
+.drop-text {
+  font-size: 3rem;
+  animation: drop-in 2s ease-out forwards;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 3s;
+}
+
+@keyframes drop-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
